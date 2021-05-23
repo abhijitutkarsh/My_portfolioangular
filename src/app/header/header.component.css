@@ -45,3 +45,32 @@ header{
      bottom: 0;
      right: -3px;
  }
+ @media screen and (max-width: 600px) {
+   
+   
+     .p_menu span:last-child{
+         margin-bottom: 0;
+     }
+     .p_menu span:nth-child(2){
+         width: 10px;
+     }
+     header ul{
+         display: flex;
+         align-items: center;
+     }
+     header ul li{
+         padding: 0 40px;
+     }
+     header ul li:first-child{
+         padding-left:0;
+     }
+     header ul li:last-child{
+         padding-right: 0;
+     }
+     header ul li a {
+         color: #000000;
+        font-weight: 500;
+        position: relative;
+     }
+   
+    }

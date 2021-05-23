@@ -16,3 +16,27 @@
     color: #acacac;
     width:80%;
 }
+.a{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .p-profile{
+        background: none;
+        width: 70%;
+        height: 200px;
+        background-size: cover;
+        background-position: none;
+        background-repeat: no-repeat;
+        object-position: center;
+    }
+    .a{
+        
+        background-image: url(/assets/img/image1.jpg);
+        opacity: 0.4;
+        display: grid;
+    }
+    .container{
+        position: absolute;
+        top: 20%;
+    }
+}

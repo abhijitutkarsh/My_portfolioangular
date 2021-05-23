@@ -43,13 +43,19 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { AboutComponent } from './about/about.component';
+import { EducationComponent } from './education/education.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AboutComponent,
+    EducationComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

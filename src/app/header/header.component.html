@@ -33,4 +33,52 @@
             </div>
         </div>
     </div>
-</header>
+    
+    
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+            
+            <div class="toggleLinks">
+                <button (click) ="opened = !opened">
+    <ul>
+        <li class="p_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+    </ul>
+</button>
+    
+        <li>
+            <a href="#"[routerLink]="['/']" [routerLinkActive]="['is-active']">Home</a>
+        </li>
+        <li>
+            <a href="#"[routerLink]="['/education']" [routerLinkActive]="['is-active']">Education</a>
+        </li>
+        <li>
+            <a href="#" [routerLink]="['/experience']" [routerLinkActive]="['is-active']">Experience</a>
+        </li>
+        <li>
+            <a href="#"[routerLink]="['/about']" [routerLinkActive]="['is-active']">About</a>
+        </li>
+        <li>
+            <a href="#"[routerLink]="['/contact']" [routerLinkActive]="['is-active']">Contact me</a>
+        </li>
+    
+</div>
+    </mat-sidenav>
+        
+        <mat-sidenav-content>
+            <button (click) ="opened = !opened">
+                <ul>
+                    <li class="p_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
+                </ul>            </button>
+            <h1>My Portfolio</h1>
+        </mat-sidenav-content>
+        
+    </mat-sidenav-container>
+</header> 

@@ -51,20 +51,32 @@ h1,h2,h3,h4,h5,h6{
 }
 /* WRAPPER CLASS*/
 
-.p-wrapper{
+ .p-wrapper{
     position: relative;
-}
-.p-wrapper::before{
+} 
+ .p-wrapper::before{
     content: '';
     background: #f9b205;
     height: 100vh;
     width:25vw;
     position: absolute;
     z-index: -1;
-}
+} 
 @media screen and (max-width: 600px) {
     .p-wrapper::before{
         background: #fcfcfb;
     }
+    .p-wrapper{
+        position: relative;
    
+    } 
+     .p-wrapper::before{
+        content: '';
+        background: #f9b205;
+        height: 100vh;
+        width:25vw;
+        position: absolute;
+        z-index: -1;
+       
+    } 
 }

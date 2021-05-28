@@ -95,7 +95,6 @@ import { ContactComponent } from './contact/contact.component';
   ReactiveFormsModule,
   LayoutModule,
   NgbModule,
- 
   ],
   providers: [],
   bootstrap: [AppComponent]

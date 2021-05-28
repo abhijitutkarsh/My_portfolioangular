@@ -5,6 +5,8 @@
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    border-radius: 100%;
+    border: solid brown;
 }
 .p-tag{
     background: #989898;

@@ -34,17 +34,21 @@
      color: #000000;
     font-weight: 500;
     position: relative;
+    font-size: larger;
  }
  header ul li a:hover::after, header ul li a.is-active:after{
      content:'';
-     background: yellow ;
-     height: 9px;
+     background: lightyellow ;
+     height: 25px;
      position: absolute;
-     left: 1px;
+     left: -7px;
      z-index: -1;
-     bottom: 0;
+     bottom: -4px;
      right: -3px;
+     width: 140%;
      font-display: blue;
+     border-radius: 50px;
+     border: solid red;
  }
  mat-sidenav-container {
     height: 100%;

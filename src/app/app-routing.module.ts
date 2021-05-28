@@ -9,7 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
+  { path: 'home', component: HomeComponent},
   { path: 'experience', component: ExperienceComponent },
   { path: 'education', component: EducationComponent },
   { path: 'about', component: AboutComponent },

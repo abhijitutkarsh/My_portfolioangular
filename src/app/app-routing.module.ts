@@ -9,11 +9,12 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: HomeComponent, data: {animation: 'HomePage'} },
+  { path: 'experience', component: ExperienceComponent, data: {animation: 'ExperiencePage'} },
+  { path: 'education', component: EducationComponent, data: {animation: 'EducationPage'} },
+  { path: 'about', component: AboutComponent, data: {animation: 'AboutPage'} },
+  { path: 'contact', component: ContactComponent, data: {animation: 'ContactPage'} },
   { path: 'header', component: HeaderComponent },
 ];
 

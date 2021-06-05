@@ -1,7 +1,34 @@
+/* 
 .educate{
     font-weight: 100;
     font-variant: normal;
 }
 .mat{
     width: min-content;
+}
+.carousel-style{
+    background-color: blue;
+} */
+h4{
+    color:#4a4843;
+font-size: 20px;
+margin-bottom: 10px;
+margin-top:2px;
+}
+/* .col-md-3{
+    background-color: bisque;
+} */
+/* Filtering table demo */
+ngb-carousel .wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%; /* Keep ratio for 900x500 images */
+}
+
+ngb-carousel .wrapper>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -46,6 +48,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsComponent } from './skills/skills.component';
+import { CarouselsComponent } from './carousels/carousels.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +59,9 @@ import { ContactComponent } from './contact/contact.component';
     ExperienceComponent,
     AboutComponent,
     EducationComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsComponent,
+    CarouselsComponent
   ],
   imports: [
     BrowserModule,
@@ -95,6 +101,7 @@ import { ContactComponent } from './contact/contact.component';
   ReactiveFormsModule,
   LayoutModule,
   NgbModule,
+  CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

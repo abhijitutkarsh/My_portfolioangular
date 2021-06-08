@@ -1,13 +1,34 @@
-<ngb-carousel *ngIf="images">
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="images[0]" alt="Random first slide">
-    </div>
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </ng-template>
+<h3>start</h3>
+<div class="container-fluid">
+  
+  <h1>Angular Bootstrap Carousel Example - ItSolutionStuff.com</h1>
+    
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="wrapper">
+        <img [src]="image.src" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ image.title }}</h3>
+        <p>{{ image.short }}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+      
+  </div>
+<!-- <ngb-carousel *ngIf="xyz" style="width: 350px; height: 350px; padding-left: 16px; padding-right: 16px">
+  hi
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="wrapper">
+        <img [src]="image.src" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ image.title }}</h3>
+        <p>{{ image.short }}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
   <ng-template ngbSlide>
     <div class="picsum-img-wrapper">
       <img [src]="images[1]" alt="Random second slide">
@@ -26,4 +47,34 @@
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </div>
   </ng-template>
-</ngb-carousel>
+</ngb-carousel> -->
+<h3>end</h3>
+<!-- <ngb-carousel >
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="../../assets/banner.jpg" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="../../assets/banner.jpg" alt="Random second slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="../../assets/banner.jpg" alt="Random third slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel> -->

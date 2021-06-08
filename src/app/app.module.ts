@@ -50,6 +50,7 @@ import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CarouselsComponent } from './carousels/carousels.component';
+import {NgParticlesModule} from 'ng-particles';
 
 @NgModule({
   declarations: [
@@ -102,6 +103,7 @@ import { CarouselsComponent } from './carousels/carousels.component';
   LayoutModule,
   NgbModule,
   CarouselModule,
+  NgParticlesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

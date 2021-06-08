@@ -1,9 +1,12 @@
 <section class="p-wrapper">
-    <!-- Header -->
-    <app-header></app-header>
-    
-    <!-- ROUTER -->
-    <div [@routeAnimations]="prepareRoute(outlet)">
+  <!-- Header -->
+  <app-header></app-header>
+  
+  <!-- ROUTER -->
+  
+  <div [@routeAnimations]="prepareRoute(outlet)">
+      <!-- <ng-particles [id]="id" [url]="particlesUrl" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)">  -->
         <router-outlet #outlet="outlet"></router-outlet>
+        <!-- </ng-particles> -->
       </div>
 </section>

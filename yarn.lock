@@ -173,7 +173,7 @@
     "universal-analytics" "0.4.23"
     "uuid" "8.3.2"
 
-"@angular/common@ ^11.0.0-rc.0 || ^11.0.0", "@angular/common@^11.0.0", "@angular/common@^11.0.0 || ^12.0.0-0", "@angular/common@~11.2.5", "@angular/common@11.2.14":
+"@angular/common@ ^11.0.0-rc.0 || ^11.0.0", "@angular/common@^11.0.0", "@angular/common@^11.0.0 || ^12.0.0-0", "@angular/common@>=2.0.0", "@angular/common@~11.2.5", "@angular/common@11.2.14":
   "integrity" "sha512-ZSLV/3j7eCTyLf/8g4yBFLWySjiLz3vLJAGWscYoUpnJWMnug1VRu6zoF/COxCbtORgE+Wz6K0uhfS6MziBGVw=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-11.2.14.tgz"
   "version" "11.2.14"
@@ -211,7 +211,7 @@
   dependencies:
     "tslib" "^2.0.0"
 
-"@angular/core@^11.0.0", "@angular/core@^11.0.0 || ^12.0.0-0", "@angular/core@^11.0.0-rc.0 || ^11.0.0", "@angular/core@>=2.3.1 <13.0.0 || ^12.0.0-next || ^12.1.0-next || ^12.2.0-next", "@angular/core@~11.2.5", "@angular/core@11.2.14":
+"@angular/core@^11.0.0", "@angular/core@^11.0.0 || ^12.0.0-0", "@angular/core@^11.0.0-rc.0 || ^11.0.0", "@angular/core@>=2.0.0", "@angular/core@>=2.3.1 <13.0.0 || ^12.0.0-next || ^12.1.0-next || ^12.2.0-next", "@angular/core@~11.2.5", "@angular/core@11.2.14":
   "integrity" "sha512-vpR4XqBGitk1Faph37CSpemwIYTmJ3pdIVNoHKP6jLonpWu+0azkchf0f7oD8/2ivj2F81opcIw0tcsy/D/5Vg=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-11.2.14.tgz"
   "version" "11.2.14"
@@ -5003,6 +5003,11 @@
     "merge-stream" "^2.0.0"
     "supports-color" "^7.0.0"
 
+"jquery@^3.6.0":
+  "integrity" "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
+  "version" "3.6.0"
+
 "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
   "resolved" "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -5814,6 +5819,13 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
+"ng-particles@^2.10.0":
+  "integrity" "sha512-keEhEawomcErnyMXPQLOxoESmoJNX5uHkVxHaKqbczt4u9yP1Ahs7Bkgyu2AkLkxbyxmA1+zC6lWRt+4v9DEjw=="
+  "resolved" "https://registry.npmjs.org/ng-particles/-/ng-particles-2.10.0.tgz"
+  "version" "2.10.0"
+  dependencies:
+    "tslib" "^2.0.0"
+
 "ngx-owl-carousel-o@^5.0.0":
   "integrity" "sha512-wMfGEMu/cI61jAJQfSS82fMxGfmvSgCdoQ2bZfHZlHwdD1poOpzYkzPu/yTPzdw84gG2kK+sXSawm0X4Mproxg=="
   "resolved" "https://registry.npmjs.org/ngx-owl-carousel-o/-/ngx-owl-carousel-o-5.0.0.tgz"
@@ -6372,6 +6384,11 @@
   "integrity" "sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw=="
   "resolved" "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   "version" "4.0.0"
+
+"pathseg@^1.2.0":
+  "integrity" "sha512-+pQS7lTaoVIXhaCW7R3Wd/165APzZHWzYVqe7dxzdupxQwebgpBaCmf0/XZwmoA/rkDq3qvzO0qv4d5oFVrBRw=="
+  "resolved" "https://registry.npmjs.org/pathseg/-/pathseg-1.2.0.tgz"
+  "version" "1.2.0"
 
 "pbkdf2@^3.0.3":
   "integrity" "sha512-iuh7L6jA7JEGu2WxDwtQP1ddOpaJNC4KlDEFfdQajSGgGPNi4OyDc2R7QnbY2bR9QjBVGwgvTdNJZoE7RaxUMA=="
@@ -8441,6 +8458,13 @@
     "semver" "^5.3.0"
     "tslib" "^1.13.0"
     "tsutils" "^2.29.0"
+
+"tsparticles@^1.27.0":
+  "integrity" "sha512-7gBErOh21DNDbcflrxb7PT6eQPldTZURx6l099DRZbtbzzhT/N3Jyx80xsvjVPB52m30KiQswAsaMMg2lq+iFA=="
+  "resolved" "https://registry.npmjs.org/tsparticles/-/tsparticles-1.27.0.tgz"
+  "version" "1.27.0"
+  optionalDependencies:
+    "pathseg" "^1.2.0"
 
 "tsutils@^2.29.0":
   "integrity" "sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA=="

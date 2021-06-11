@@ -29,8 +29,8 @@ export class ContactComponent implements OnInit {
           this.form = this.fb.group({
             email: ['', Validators.required],
             username: ['', Validators.email],
-
-            password: ['', Validators.required],
+            subject: ['', Validators.required],
+            message: ['', Validators.required],
             mobile: ['', [Validators.required, Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
 
 
@@ -52,14 +52,15 @@ export class ContactComponent implements OnInit {
         // console.log(this.form.get('username')?.value);
         const username = this.form.get('username')?.value;
 
-        const password = this.form.get('password')?.value;
+        const message = this.form.get('message')?.value;
         const email = this.form.get('email')?.value;
         const mobile = this.form.get('mobile')?.value;
-
+        const subject = this.form.get('subject')?.value;
         console.log(username);
         console.log(email);
-        console.log(password);
+        console.log(message);
         console.log(mobile);
+        console.log(subject);
         }
 
         }

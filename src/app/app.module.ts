@@ -51,6 +51,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { CarouselsComponent } from './carousels/carousels.component';
 import {NgParticlesModule} from 'ng-particles';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -103,6 +104,7 @@ import {NgParticlesModule} from 'ng-particles';
   LayoutModule,
   NgbModule,
   CarouselModule,
+  HttpClientModule,
   NgParticlesModule,
   ],
   providers: [],

@@ -1,12 +1,30 @@
 ngb-carousel .wrapper {
     position: relative;
     height: 0;
-    padding-top: 55%; /* Keep ratio for 900x500 images */
-  }
+    padding-top: 55%;
+    color: black; 
+}
   ngb-carousel .wrapper>img {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    color: black;
   }
+  h3{
+    font-weight: 300;
+  }
+img{
+  width: 300px;  
+height: auto;  
+/* text-align: center;   */
+padding: 15px;  
+border: 3px solid red;  
+}
+/* ::ng-deep .carousel-control-prev-icon{
+  background-image: url('https://apufpel.com.br/assets/img/seta_prim.png');
+}
+::ng-deep .carousel-control-next-icon{
+  background-image: url('https://apufpel.com.br/assets/img/seta_ult.png');
+} */

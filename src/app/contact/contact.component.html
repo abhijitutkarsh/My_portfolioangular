@@ -1,1 +1,70 @@
-<p>contact works!</p>
+<!-- <form (ngSubmit)="processForm()">
+
+  <div class="field">
+    <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name">
+  </div>
+
+  <div class="field">
+    <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email">
+  </div>
+
+  <div class="field">
+    <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message"></textarea>
+  </div>
+
+  <button type="submit" class="button is-danger is-large">Submit</button>
+
+</form> -->
+
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" type="text" formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input type="email" matInput [formControl]="emailFormControl" 
+          placeholder="Ex. pat@example.com" formControlName="username" >
+          <!-- <mat-hint>provide your mail</mat-hint> -->
+    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+      Please enter a valid email
+    </mat-error>
+  
+  <mat-error>
+
+    Please provide a valid email
+
+  </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Password" formControlName="password" >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Mobile" type="number" formControlName="mobile" required >
+          <mat-error *ngIf="emailFormControl.hasError('pattern') && !emailFormControl.hasError('required')">
+            Please enter a valid email
+          </mat-error>
+          <mat-error>
+
+            Please provide a valid mobile number
+        
+          </mat-error>
+        </mat-form-field>
+
+      </mat-card-content>
+
+      <button mat-raised-button color="primary">Register</button>
+
+    </form>
+  </mat-card>
+</div>

@@ -4,7 +4,8 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-carousels',
   templateUrl: './carousels.component.html',
-  styleUrls: ['./carousels.component.css']
+  styleUrls: ['./carousels.component.css'],
+  providers: [NgbCarouselConfig] ,
 })
 export class CarouselsComponent implements OnInit {
 
@@ -12,18 +13,15 @@ export class CarouselsComponent implements OnInit {
   ngOnInit(): void {
   }
    // tslint:disable-next-line:member-ordering
-   xyz = true;
+
   // tslint:disable-next-line:member-ordering
-  images = [
-    {title: 'First Slide', short: 'First Slide Short', src: 'https://picsum.photos/id/700/900/500'},
-    {title: 'Second Slide', short: 'Second Slide Short', src: 'https://picsum.photos/id/1011/900/500'},
-    {title: 'Third Slide', short: 'Third Slide Short', src: 'https://picsum.photos/id/984/900/500'}
-  ];
-// tslint:disable-next-line:eofline
+  images = ['../../assets/c++.jpeg',  '../../assets/aws.jpeg', '../../assets/cloud.jpeg', '../../assets/algorithmictoolbox.jpeg' , '../../assets/compititive.jpeg', '../../assets/data_wrangling.jpeg' , '../../assets/dividenconquer.jpeg', '../../assets/sql.jpeg' , '../../assets/cybersecurity.jpeg' , '../../assets/comutervision.jpeg'  ];
+// tslint:disable-next-line:eoflineE:\angularportfolio\my-app\src\assets\cybersecurity.jpeg
 
 constructor(config: NgbCarouselConfig) {
-  config.interval = 2000;
-  config.keyboard = true;
-  config.pauseOnHover = true;
+  config.interval = 10000;
+  config.wrap = false;
+  config.keyboard = false;
+  config.pauseOnHover = false;
 }
 }

@@ -8,6 +8,7 @@ import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: {animation: 'AboutPage'} },
   { path: 'contact', component: ContactComponent, data: {animation: 'ContactPage'} },
   { path: 'skills', component: SkillsComponent, data: {animation: 'SkillsPage'} },
+  { path: 'project', component: ProjectsComponent, data: {animation: 'ProjectPage'} },
   { path: 'header', component: HeaderComponent },
 ];
 

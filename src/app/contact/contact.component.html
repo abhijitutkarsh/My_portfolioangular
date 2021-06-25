@@ -1,25 +1,10 @@
-<!-- <form (ngSubmit)="processForm()">
+<h3 style="font-weight: 700; font-size: 50px;line-height: normal;">Feel<br> free<br> to<br> contact me</h3>
 
-  <div class="field">
-    <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name">
-  </div>
-
-  <div class="field">
-    <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email">
-  </div>
-
-  <div class="field">
-    <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message"></textarea>
-  </div>
-
-  <button type="submit" class="button is-danger is-large">Submit</button>
-
-</form> -->
 
 <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
-  <mat-card class="box">
+  <mat-card class="box" style="position: relative; top: -200px; height: 500px; width: 700px;">
     <mat-card-header>
-      <mat-card-title>Contact me</mat-card-title>
+      <mat-card-title><h1 style="font-weight: 1000;">Contact me</h1></mat-card-title>
     </mat-card-header>
 
     <form class="example-form"  [formGroup]="form"  (ngSubmit)="onSubmit()" novalidate>
@@ -29,14 +14,11 @@
         <mat-form-field class="example-full-width">
           <input [class.is-invalid]="form.get('username')?.invalid && 
           form.get('username')?.touched" matInput placeholder="Name" type="text" formControlName="email" required>
-       <!-- <mat-error [class.d-none]="form.get('username')?.valid || 
-       form.get('username')?.untouched" class="text-danger">Name is required</mat-error> -->
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
           <input type="email" matInput [formControl]="emailFormControl" 
           placeholder="Ex. pat@example.com" formControlName="username" >
-          <!-- <mat-hint>provide your mail</mat-hint> -->
     <mat-error *ngIf="emailFormControl.hasError('email') && emailFormControl.hasError('required')">
       Please enter a valid email
     </mat-error>
@@ -69,7 +51,99 @@
       </mat-card-content>
 
       <button mat-raised-button color="primary" type="submit"  [disabled]="form.invalid">Send</button>
-      {{form.value | json}}
     </form>
   </mat-card>
+
+  <div class="col-md-6" style="position: absolute; top:500px;">
+    <div class="card-body">
+      
+      
+      <p class="mb-0">
+        <strong style="font-size: 20px; font-weight: 600;">Phone</strong>
+      </p>
+      <p class="pb-2">+91 9958953363</p>
+      <p class="mb-0">
+        <strong style="font-size: 20px; font-weight: 600;">Email</strong>
+      </p>
+      <p>abhijitu17@gmail.com</p>
+    </div>
+  </div>
 </div>
+<!-- <div class="section" id="contact">
+  <div class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Contact Me</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <form class="example-form"  [formGroup]="form"  (ngSubmit)="onSubmit()" novalidate>
+                      <div class="p pb-3">
+                        <strong>Feel free to contact me </strong>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <i class="fa fa-user-circle"></i>
+                            </span>
+                            <input class="form-control" type="text" name="name" placeholder="Name"
+                            formControlName="email" 
+                            [class.is-invalid]="form.get('username')?.invalid && 
+                            form.get('username')?.touched" required />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <i class="fa fa-file-text"></i>
+                            </span>
+                            <input class="form-control" type="text" name="subject" placeholder="Subject"
+                            formControlName="subject"
+                               required />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <i class="fa fa-envelope"></i>
+                            </span>
+                            <input class="form-control" type="text" name="email" placeholder="E-mail"
+                            formControlName="username"
+                              pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message"
+                            formControlName="message"
+                             required></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

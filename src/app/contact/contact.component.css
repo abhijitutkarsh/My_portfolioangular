@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 mat-card {
 
   max-width: 400px;
@@ -5,7 +9,20 @@ mat-card {
   margin: 2em auto;
 
   text-align: center;
+  border-radius: 30px;
+    /* box-shadow: 0px 4px 8px 0px #b71c1c; */
+    background-color:  rgb(224, 252, 206);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: 0.5s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 100;
+    font-family: 'EB Garamond', serif;
 
+}
+.input{
+  padding: 1px;
 }
 
 
@@ -25,3 +42,32 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+button {
+	/* background-image: linear-gradient(to left, rgba(230, 134, 111, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%); */
+    background-color: darkkhaki;
+	box-shadow: 0 9px 25px -5px darkorange;
+	font-family: 'Abel', sans-serif;
+	padding: 0.5em 1.9em;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+    
+}
+button:hover{transform: translatey(2px);}
+button:active{transform: translatey(5px);}
+    
+
+.mat-card-title{
+  text-align: center;
+}
+.mat-card:hover {
+  box-shadow: 3px 8px 16px 0 rgb(233, 50, 50);
+
+  
+}
+

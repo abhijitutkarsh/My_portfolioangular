@@ -1,34 +1,7 @@
-/* header {
-    background-color: #FF0000;
-    animation: bgColor 5s infinite linear;
-  
-  }
-  @keyframes bgColor {
-    12.5% {
-      background-color: #FF0000;
-    }
-    25% {
-      background-color: #FFA500;
-    }
-    37.5% {
-      background-color: #FFFF00;
-    }
-    50% {
-      background-color: #7FFF00;
-    }
-    62.5% {
-      background-color: #00FFFF;
-    }
-    75% {
-      background-color: #0000FF;
-    }
-    87.5% {
-      background-color: #9932CC;
-    }
-    100% {
-      background-color: #FF1493;
-    }
-  }  */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
  
   #grad {
     background-image: linear-gradient(red, yellow);
@@ -36,9 +9,10 @@
  header{
     padding: 30px 0;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(97, 218, 86));
+    font-family: 'Roboto', sans-serif;
     
-
 } 
+
 .p_menu{
     cursor: pointer;
 }
@@ -58,9 +32,13 @@
  header ul{
      display: flex;
      align-items: center;
+     font-family: 'Roboto', sans-serif;
+
  }
  header ul li{
      padding: 0 40px;
+     font-family: 'Roboto', sans-serif;
+
  }
  header ul li:first-child{
      padding-left:0;
@@ -100,6 +78,7 @@ mat-sidenav{
     background-color: lightcoral;
     width:200px;
 }
+
  @media screen and (max-width: 600px) {
      header{
         padding: 0%;
@@ -144,7 +123,7 @@ mat-sidenav{
         padding-left: 15px;
     }
     mat-sidenav{
-        padding-left: 16px;
+  padding-left: 16px;
   width: 100%;
   position: fixed;
   z-index: 1;

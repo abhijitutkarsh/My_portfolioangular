@@ -32,3 +32,8 @@ ngb-carousel .wrapper>img {
   bottom: 0;
   right: 0;
 }
+.ba{
+    font-weight: 600;
+    font-size: 27px;
+    line-height: normal;
+}

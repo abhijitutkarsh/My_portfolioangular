@@ -1,84 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";  
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+.body {
+  margin: 0;
+  padding: 0;
 
-.body{
-    margin:0;
-    padding: 0;
-
-    font-size: 18px;;
+  font-size: 18px;
 }
 .p {
-    margin: 0;
+  margin: 0;
 }
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin:0;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-a, a:hover{
-    text-decoration: none;
-    color: #000;
+a,
+a:hover {
+  text-decoration: none;
+  color: #000;
 }
-h1,h2,h3,h4,h5,h6{
-    font-weight: 700;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 /*COMMON*/
-.p-cursor{
-    cursor:pointer;
+.p-cursor {
+  cursor: pointer;
 }
-.p-flex{
-    display: flex;
+.p-flex {
+  display: flex;
 }
-.p-flex-align-center{
-    align-items:center;
+.p-flex-align-center {
+  align-items: center;
 }
-.p-flex-jc-sb{
-    justify-content: space-between;
+.p-flex-jc-sb {
+  justify-content: space-between;
 }
-.p-readmore{
-    color: #000;
-    /* font-size: 20px; */
-    font-weight:600;
+.p-readmore {
+  color: #000;
+  /* font-size: 20px; */
+  font-weight: 600;
 }
-.p-readmore img{
-    transition:all .5s;
-    transform: translateX(0);
+.p-readmore img {
+  transition: all 0.5s;
+  transform: translateX(0);
 }
-.p-readmore:hover img{
-    transform: translateX(5px);
+.p-readmore:hover img {
+  transform: translateX(5px);
 }
 /* WRAPPER CLASS*/
 
- .p-wrapper{
+.p-wrapper {
+  position: relative;
+}
+.p-wrapper::before {
+  content: "";
+  background: #f9b205;
+  height: 100vh;
+  width: 25vw;
+  position: absolute;
+  z-index: -1;
+}
+@media screen and (max-width: 600px) {
+  .p-wrapper::before {
+    background: #fcfcfb;
+  }
+  .p-wrapper {
     position: relative;
-} 
- .p-wrapper::before{
-    content: '';
+  }
+  .p-wrapper::before {
+    content: "";
     background: #f9b205;
     height: 100vh;
-    width:25vw;
+    width: 25vw;
     position: absolute;
     z-index: -1;
-} 
-@media screen and (max-width: 600px) {
-    .p-wrapper::before{
-        background: #fcfcfb;
-    }
-    .p-wrapper{
-        position: relative;
-   
-    } 
-     .p-wrapper::before{
-        content: '';
-        background: #f9b205;
-        height: 100vh;
-        width:25vw;
-        position: absolute;
-        z-index: -1;
-       
-    } 
+  }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

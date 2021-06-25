@@ -52,6 +52,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { CarouselsComponent } from './carousels/carousels.component';
 import {NgParticlesModule} from 'ng-particles';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectsComponent } from './projects/projects.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,8 @@ import { HttpClientModule } from '@angular/common/http';
     EducationComponent,
     ContactComponent,
     SkillsComponent,
-    CarouselsComponent
+    CarouselsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -106,6 +109,7 @@ import { HttpClientModule } from '@angular/common/http';
   CarouselModule,
   HttpClientModule,
   NgParticlesModule,
+  NgCircleProgressModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

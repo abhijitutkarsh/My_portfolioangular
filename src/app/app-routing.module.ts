@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ServicesComponent } from './services/services.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent, data: {animation: 'SkillsPage'} },
   { path: 'project', component: ProjectsComponent, data: {animation: 'ProjectPage'} },
   { path: 'header', component: HeaderComponent },
+  { path: 'service', component: ServicesComponent, data: {animation: 'ServicePage'} },
+
 ];
 
 @NgModule({

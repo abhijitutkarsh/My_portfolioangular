@@ -16,7 +16,7 @@ export const transAnimation = animation([
   // Routable animations
 export const slideInAnimation =
     trigger('routeAnimations', [
-      transition('HomePage <=> AboutPage,HomePage <=> ProjectPage, HomePage <=> SkillsPage , ProjectPage <=> SkillsPage , HomePage <=> ExperiencePage,ProjectPage <=> ExperiencePage , HomePage <=> EducationPage,ProjectPage <=> EducationPage ,HomePage <=> ContactPage,ProjectPage <=> ContactPage, EducationPage <=> AboutPage,ProjectPage <=> AboutPage,EducationPage <=> SkillsPage, EducationPage <=> ExperiencePage,ExperiencePage <=> SkillsPage, EducationPage <=> ContactPage,ContactPage <=> SkillsPage,ContactPage <=> ProjectPage, ExperiencePage <=> AboutPage, ExperiencePage <=> ContactPage,SkillsPage <=> AboutPage, ContactPage <=> AboutPage', [
+      transition('HomePage <=> AboutPage,HomePage <=> ServicePage,HomePage <=> ProjectPage,ServicePage <=> ProjectPage, HomePage <=> SkillsPage,ServicePage <=> SkillsPage , ProjectPage <=> SkillsPage , HomePage <=> ExperiencePage,ServicePage <=> ExperiencePage,ProjectPage <=> ExperiencePage , HomePage <=> EducationPage,ServicePage <=> EducationPage,ProjectPage <=> EducationPage ,HomePage <=> ContactPage,ServicePage <=> ContactPage,ProjectPage <=> ContactPage, EducationPage <=> AboutPage,ServicePage <=> AboutPage,ProjectPage <=> AboutPage,EducationPage <=> SkillsPage, EducationPage <=> ExperiencePage,ExperiencePage <=> SkillsPage, EducationPage <=> ContactPage,ContactPage <=> SkillsPage,ContactPage <=> ProjectPage, ExperiencePage <=> AboutPage, ExperiencePage <=> ContactPage,SkillsPage <=> AboutPage, ContactPage <=> AboutPage', [
         style({ position: 'relative' }),
         query(':enter, :leave', [
           style({

@@ -2,4 +2,14 @@
     font-size: 30px;
     font-weight: 600;
     text-align: center;
+    line-height: normal;
 }
+#border{
+    border-color: black;
+    border-style: solid;
+    
+}
+.col-md-6{
+  padding: 0.2%;
+}
+/* ---------------------------------- */

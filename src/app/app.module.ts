@@ -54,6 +54,8 @@ import {NgParticlesModule} from 'ng-particles';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ServicesComponent } from './services/services.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ContactComponent,
     SkillsComponent,
     CarouselsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

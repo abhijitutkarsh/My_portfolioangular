@@ -10,7 +10,7 @@
   background-position: top;
   background-repeat: no-repeat;
   border-radius: 100%;
-  border: solid brown;
+  border: solid brown;animation: 1s ease-out 0s 1 slideInFromLeft; 
 }
 .p-tag {
   background: #989898;

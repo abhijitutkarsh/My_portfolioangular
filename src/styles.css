@@ -61,10 +61,19 @@ h6 {
 .p-wrapper {
   position: relative;
 }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+}
 .p-wrapper::before {
   content: "";
   background: #f9b205;
-  height: 100vh;
+  height: 120vh;
   width: 25vw;
   position: absolute;
   z-index: -1;

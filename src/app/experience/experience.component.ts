@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogExampleComponent } from '../dialog-example/dialog-example.component';
 
 @Component({
   selector: 'app-experience',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
+  openDialog()
+  {
+  this.dialog.open(DialogExampleComponent);
+  }
 }
+
+

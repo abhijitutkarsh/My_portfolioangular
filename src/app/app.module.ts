@@ -56,6 +56,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 @NgModule({
   declarations: [
@@ -70,8 +71,10 @@ import { FooterComponent } from './footer/footer.component';
     CarouselsComponent,
     ProjectsComponent,
     ServicesComponent,
-    FooterComponent
+    FooterComponent,
+    DialogExampleComponent
   ],
+  entryComponents: [DialogExampleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

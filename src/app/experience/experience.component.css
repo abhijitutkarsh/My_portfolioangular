@@ -1,4 +1,4 @@
-.colorlib-experience
+/* .colorlib-experience
 {
     padding-top: 4em;
     padding-bottom: 9em;
@@ -149,4 +149,213 @@
       }
       .timeline-label ul{
         font-size: 1.3em;font-weight:500; font-family: "Quicksand", Arial, sans-serif;
+      } */
+
+
+/* ------------------------------------------------------ */
+/* .hexagon {
+  width: 100px;
+  height: 55px;
+          position: relative;
+          left:26%;
+          top:20px;
+        }
+        
+        .hexagon, 
+        .hexagon:before, 
+        .hexagon:after {
+          background: #ff7b25;
+        }
+        
+        .hexagon:before,
+        .hexagon:after {
+          content: "";
+          position: absolute;
+          left: 22px;
+          width: 57px;
+          height: 57px;
+          transform: rotate(145deg) skew(22.5deg);
+        }
+        
+        .hexagon:before {
+          top: -29px;
+        }
+        
+        .hexagon:after {
+          top: 27px;
+        }
+        .hexagon1 {
+          width: 100px;
+          height: 55px;
+          position: relative;
+          left:26%;
+          top:20px;
+        }
+        
+        .hexagon1, 
+        .hexagon1:before, 
+        .hexagon1:after {
+          background:  #d64161;
+        }
+        
+        .hexagon1:before,
+        .hexagon1:after {
+          content: "";
+          position: absolute;
+          left: 22px;
+          width: 57px;
+          height: 57px;
+          transform: rotate(145deg) skew(22.5deg);
+        }
+        
+        .hexagon1:before {
+          top: -29px;
+        }
+        
+        .hexagon1:after {
+          top: 27px;
+        }
+        
+        .hexagon2 {
+          width: 100px;
+          height: 55px;
+          position: relative;
+          left:26%;
+          top:20px;
+        }
+        
+        .hexagon2, 
+        .hexagon2:before, 
+        .hexagon2:after {
+          background:  #feb236;
+        }
+        
+        .hexagon2:before,
+        .hexagon2:after {
+          content: "";
+          position: absolute;
+          left: 22px;
+          width: 57px;
+          height: 57px;
+          transform: rotate(145deg) skew(22.5deg);
+        }
+        
+        .hexagon2:before {
+          top: -29px;
+        }
+        
+        .hexagon2:after {
+          top: 27px;
+        }
+        .hexagon3 {
+          width: 100px;
+          height: 55px;
+          position: relative;
+          left:26%;
+          top:20px;
+        }
+        
+        .hexagon3, 
+        .hexagon3:before, 
+        .hexagon3:after {
+          background:  #6b5b95;
+        }
+        
+        .hexagon3:before,
+        .hexagon3:after {
+          content: "";
+          position: absolute;
+          left: 22px;
+          width: 57px;
+          height: 57px;
+          transform: rotate(145deg) skew(22.5deg);
+        }
+        
+        .hexagon3:before {
+          top: -29px;
+        }
+        
+        .hexagon3:after {
+          top: 27px;
+        } */
+        
+        /* ------------------------------------------------------------------------ */
+        /* h4{
+          color:#4a4843;
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top:2px;
       }
+    
+      ngb-carousel .wrapper {
+        position: absolute;
+        height: 0;
+        padding-top: 55%; 
+      }
+      
+      ngb-carousel .wrapper>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      .card{
+          
+          left: 25%;
+          width: 70%;
+          position: absolute;
+          top: 50%;
+          left:25%
+      }
+      .ba{
+          font-weight: 500;
+          font-size: 27px;
+          line-height: normal;
+          padding: 3px;
+      }
+      .icon1{
+       height: 100px;
+       width: 100px;
+    }
+     */
+     h4{
+      color:#4a4843;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top:2px;
+  }
+  /* .col-md-3{
+      background-color: bisque;
+  } */
+  /* Filtering table demo */
+  ngb-carousel .wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 55%; /* Keep ratio for 900x500 images */
+  }
+  
+  ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .card{
+    display: table-cell;
+    vertical-align: bottom;
+          left: 22%;
+      width: 70%;
+      bottom: 20%;
+  }
+  .ba{
+      font-weight: 600;
+      font-size: 27px;
+      line-height: normal;
+  }
+  .icon1{
+    height: 100px;
+    width: 100px;
+ }
+ 

@@ -32,6 +32,11 @@ ngb-carousel .wrapper>img {
   bottom: 0;
   right: 0;
 }
+.card{
+    
+    left: 22%;
+    width: 70%;
+}
 .ba{
     font-weight: 600;
     font-size: 27px;

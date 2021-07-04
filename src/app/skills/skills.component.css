@@ -10,6 +10,29 @@
     
 }
 .col-md-6{
-  padding: 0.2%;
+  padding: 2%;
 }
+#soft{
+width: 600px;
+position: relative;
+  top: -100px; left: 340px;
+animation: 1s ease-out 0s 1 slideInFromLeft; 
+color: white;
+background-color: hotpink;
+}
+#hard{
+  width: 500px;
+  position: relative;
+  top: -100px; left: 240px;
+  animation: 1s ease-out 0s 1 slideInFromLeft; 
+  color: white;
+  background-color: black;
+}
+.animated{
+  height: 500px;
+  position:absolute;
+  left:-90px;top:90px;
+}
+
+
 /* ---------------------------------- */

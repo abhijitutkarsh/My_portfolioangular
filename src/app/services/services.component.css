@@ -175,6 +175,9 @@ img {
   font-size: medium;
   font-weight: 100;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  z-index: -1;
+  color: white;
+  background-color: brown;
 }
 .price {
   font-weight: 600;
@@ -217,10 +220,10 @@ button:active {
   margin: -1.8em 0 0 0;
 }
 
-/* .mat-card:hover {
+.mat-card:hover {
   box-shadow: 3px 8px 16px 0 #1dddb0;
-  height: 280px;
-} */
+  height: 500px;
+} 
 
 .a {
   height: 380px;
@@ -313,4 +316,10 @@ button:active {
     position: absolute;
     left: 30%;
     bottom: -680px;
+}
+.animated{
+  height: 500px;
+  position:absolute;
+  left:-350px;top:200px;
+  z-index: 1;
 }

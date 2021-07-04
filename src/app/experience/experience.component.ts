@@ -17,8 +17,9 @@ export class ExperienceComponent implements OnInit {
   // tslint:disable-next-line:typedef
   openDialog()
   {
-  this.dialog.open(DialogExampleComponent);
+  this.dialog.open(DialogExampleComponent, {panelClass: ['animate__animated', 'animate__slideInRight']});
   }
+
 }
 
 

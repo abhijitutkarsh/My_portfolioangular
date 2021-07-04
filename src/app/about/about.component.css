@@ -10,27 +10,44 @@
     font-size: medium;
     font-weight: 100;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    color: white;
+    background-color: darkblue;
   }
   .a {
     height: 380px;
     width: 400px;
     text-align: center;
-    position: absolute;
-    left: 50%;
+    position: relative;
+      
+      left: 660px;
+       top: -10px;
+       right: 0;
+       bottom: 0;
   }
+  .animated{
+    height: 700px;
+    position:relative;
+    left:30px;top:-500px;
+}
   .p-profile {
-      width: 23%;
-      height: 200%;
-      background: url(/assets/img/image1.jpg);
+      width: 50%;
+      height: 400%;
+      /* background: url(/assets/img/image1.jpg); */
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
-      box-shadow: 0px 4px 8px 0px blue;
+      /* box-shadow: 0px 4px 8px 0px blue; */
       animation: 1s ease-out 0s 1 slideInFromLeft; 
-      position: absolute;
+      position: relative;
       
-      left: 200px;
-       top: 100%;
+      left: 330px;
+       top: 100px;
+       right: 0;
+       bottom: 0;
       
     }
-    
+    .p-profile:hover{
+      width: 60%;
+      height: 400%;
+      z-index: -1;
+    }

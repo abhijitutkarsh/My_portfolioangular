@@ -79,9 +79,11 @@ mat-sidenav{
     width:200px;
 }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 800px) {
      header{
         padding: 0%;
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(97, 218, 86));
+
      }
    
    
@@ -129,10 +131,11 @@ mat-sidenav{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(76, 175, 80, 0.5);
+  background-color: rgba(76, 175, 80, 1);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  
     }
     mat-sidenav button{
         background-color: rgba(76, 175, 80, 0.1);
@@ -175,6 +178,7 @@ mat-sidenav{
     bottom: 0;
     right: 0px;
     display: list-item;
+    
    }
    .toggleLinks a{
     font-size: x-large;
@@ -202,4 +206,4 @@ mat-sidenav{
 
 
     /*******************************/
-   
+    

@@ -15,6 +15,11 @@ font-size: 20px;
 margin-bottom: 10px;
 margin-top:2px;
 }
+.animated{
+    height: 600px;
+    position:relative;
+    left:-230px;top:-300px;
+}
 /* .col-md-3{
     background-color: bisque;
 } */
@@ -32,6 +37,9 @@ ngb-carousel .wrapper>img {
   bottom: 0;
   right: 0;
 }
+#kn{
+    color: white;background-color: #a07407;
+}
 .card{
     
     left: 22%;
@@ -41,4 +49,27 @@ ngb-carousel .wrapper>img {
     font-weight: 600;
     font-size: 27px;
     line-height: normal;
+}
+.educate{
+    font-weight: 700; font-size: 50px;line-height: normal;
+}
+@media screen and (max-width: 800px) {
+
+.educate{
+    text-align: center;
+}
+.section{
+    flex-direction: column;
+    top: 100px;
+}
+.card{
+    position: relative;
+    top:500px;left: -40px;
+    width: fit-content;
+}
+.cert{
+    position: relative;
+    top:-100px;
+}
+
 }

@@ -44,8 +44,8 @@
     </div>
     
     
-    <mat-sidenav-container>
-        <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <mat-sidenav-container style="background-color: pink;">
+        <mat-sidenav #sidenav mode="side"  [(opened)]="opened">
             
             <div class="toggleLinks">
                 <button (click) ="opened = !opened">
@@ -83,7 +83,7 @@
 </div>
     </mat-sidenav>
         
-        <mat-sidenav-content style="    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(97, 218, 86));width: fit-content;">
+        <mat-sidenav-content style="width: fit-content;">
             <button (click) ="opened = !opened">
                 <ul>
                     <li class="p_menu">
@@ -97,7 +97,7 @@
         
     </mat-sidenav-container>
 </header> 
-<app-footer style="position: absolute; top: 750px; width: 260px;"></app-footer>
+<app-footer></app-footer>
 <!-- <div class="wrapper" style="position: absolute;left: 80%;bottom: -850%;">
     <a class="cta" (click)="btnClick();">
       <span></span>

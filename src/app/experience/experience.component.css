@@ -124,11 +124,11 @@ button:active {
 @media only screen and (max-width: 800px) {
   /* For mobile phones: */
   .mat-card {
+
     width: fit-content;
+    position: absolute;
     top: 300px;
-  }
-  animate{
-    
+    left: -200px;
   }
   #first:hover {
     box-shadow: 3px 8px 16px 0 #33403d;
@@ -157,6 +157,9 @@ button:active {
     width: 85%;
     position: fixed;
     z-index: -1;
+  }
+  .animated{
+    position: absolute;
   }
 }
 .space{

@@ -7,15 +7,14 @@ export class MessageService {
   constructor(private _http: HttpClient) {}
 
   // tslint:disable-next-line:variable-name
-  _url = 'http://localhost:3000/send';
+  _url = 'https://abhijitutkarsh.herokuapp.com/send';
   // tslint:disable-next-line:typedef
   value(value: any) {
     throw new Error('Method not implemented.');
   }
 
- // tslint:disable-next-line:typedef
- register(userData: any){
-   console.log(userData);
-   return this._http.post<any>(this._url, userData, );
- }
+  // tslint:disable-next-line:typedef
+  register(userData: any) {
+    return this._http.post<any>(this._url, userData);
+  }
 }

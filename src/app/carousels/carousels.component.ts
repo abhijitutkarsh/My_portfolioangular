@@ -15,7 +15,7 @@ export class CarouselsComponent implements OnInit {
    // tslint:disable-next-line:member-ordering
 
   // tslint:disable-next-line:member-ordering
-  images = ['../../assets/c++.jpeg',  '../../assets/aws.jpeg', '../../assets/cloud.jpeg', '../../assets/algorithmictoolbox.jpeg' , '../../assets/compititive.jpeg', '../../assets/data_wrangling.jpeg' , '../../assets/dividenconquer.jpeg', '../../assets/sql.jpeg' , '../../assets/cybersecurity.jpeg' , '../../assets/comutervision.jpeg'  ];
+  images = ['/My_portfolioangular/assets/c++.jpeg',  '/My_portfolioangular/assets/aws.jpeg', '/My_portfolioangular/assets/cloud.jpeg', '/My_portfolioangular/assets/algorithmictoolbox.jpeg' , '/My_portfolioangular/assets/compititive.jpeg', '/My_portfolioangular/assets/data_wrangling.jpeg' , '/My_portfolioangular/assets/dividenconquer.jpeg', '/My_portfolioangular/assets/sql.jpeg' , '/My_portfolioangular/assets/cybersecurity.jpeg' , '/My_portfolioangular/assets/comutervision.jpeg'  ];
 // tslint:disable-next-line:eoflineE:\angularportfolio\my-app\src\assets\cybersecurity.jpeg
 
 constructor(config: NgbCarouselConfig) {

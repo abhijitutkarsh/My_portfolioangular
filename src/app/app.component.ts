@@ -1,7 +1,7 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, HostListener, ViewChild } from '@angular/core';
 import {
-  trigger,
-  state,
+    trigger,
+    state,
   style,
   animate,
   transition,
@@ -13,16 +13,16 @@ import { slideInAnimation } from './animations';
 import { Container, Main } from 'ng-particles';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  animations: [
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    animations: [
     slideInAnimation
     // animation triggers go here
   ]
 })
 export class AppComponent {
-  title = 'my-app';
+    title = 'my-app';
   // tslint:disable-next-line:member-ordering
   id = 'tsparticles';
 
@@ -109,19 +109,28 @@ export class AppComponent {
       },
       detectRetina: true
   };
+    @ViewChild('cursor1')refCursor: any;
 
   // tslint:disable-next-line:typedef
   prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
-  }
+      return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+    }
 
-  particlesLoaded(container: Container): void {
-      console.log(container);
-  }
+    particlesLoaded(container: Container): void {
+        console.log(container);
+    }
 
-  particlesInit(main: Main): void {
-      console.log(main);
+    particlesInit(main: Main): void {
+        console.log(main);
 
-      // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
-  }
+        // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+    }
+    @HostListener('document:mousemove', ['$event'])
+    // tslint:disable-next-line:typedef
+    onMouseMove(event: any){
+        console.log('width' + event.pageX);
+        console.log('height' + event.pageY);
+        this.refCursor.nativeElement.style.left = (event.pageX - 25) + 'px';
+        this.refCursor.nativeElement.style.top = (event.pageY - 25 ) + 'px';
+    }
 }

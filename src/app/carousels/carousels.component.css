@@ -28,3 +28,6 @@ border: 3px solid red;
 ::ng-deep .carousel-control-next-icon{
   background-image: url('https://apufpel.com.br/assets/img/seta_ult.png');
 } */
+.ngb-carousel{
+  background-color: pink;
+}

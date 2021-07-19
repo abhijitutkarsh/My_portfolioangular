@@ -69,10 +69,12 @@ export class ContactComponent implements OnInit {
         console.log(this.form.value);
         this._messageService.register(this.form.value)
         .subscribe(
-          // response => console.log('Success!', response),
-          // error => console.log('Error!', error)
+           response => console.log('Success!', response),
+           error => console.log('Error!', error)
+        );
+        return this._messageService.register(this.form).subscribe(
+          data => this.form = data,
         );
         }
-
         }
 

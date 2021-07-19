@@ -10,7 +10,7 @@ header {
   background-image: linear-gradient(
     to right,
     rgba(255, 0, 0, 0),
-    rgb(97, 218, 86)
+    rgb(73, 4, 138)
   );
   font-family: "Roboto", sans-serif;
 }
@@ -55,7 +55,7 @@ header ul li a {
 header ul li a:hover::after,
 header ul li a.is-active:after {
   content: "";
-  background: lightyellow;
+  background: rgb(148, 148, 77);
   height: 25px;
   position: absolute;
   left: -7px;

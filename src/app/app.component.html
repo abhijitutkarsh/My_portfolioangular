@@ -1,0 +1,23 @@
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<section class="p-wrapper" >
+  <!-- Header -->
+  <div class="cursor" #cursor1></div>
+  
+  <app-header style="position: fixed;
+  z-index:999; width: 100%;">
+  </app-header>
+  
+  <!-- ROUTER -->
+  <div style="height: 88px;
+  width: 100%;
+  "></div>
+  
+  <div [@routeAnimations]="prepareRoute(outlet)" >
+    <!-- <ng-particles [id]="id" [url]="particlesUrl" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)">  -->
+      <router-outlet #outlet="outlet"></router-outlet>
+      <!-- </ng-particles> -->
+    </div>
+  
+  </section>

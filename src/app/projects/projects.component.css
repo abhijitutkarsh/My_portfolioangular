@@ -283,7 +283,11 @@ img {
   font-family: "Roboto", sans-serif;
   font-size: medium;
   font-weight: 100;
-  background-color: purple;
+  background-image: linear-gradient(
+   black,
+    green
+    
+  );
   color: white;
 }
 .price {
@@ -431,7 +435,7 @@ button:active {
 }
 /* buttn */
 a, a::after {
-  width: 220px;
+  width: 200px;
   height: 36px;
   /* font-size: 36px; */
   font-family: 'Bebas Neue', cursive;
@@ -444,6 +448,7 @@ a, a::after {
   outline: transparent;
   position: relative;
   z-index: 1;
+  
 }
 
 a::after {
@@ -550,12 +555,23 @@ a:hover::after {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-image: linear-gradient(
+    
+    #968c83,
+    #FFDFFF,
+    black
+   
+  );
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-image: linear-gradient(
+    to right,
+    #FFDFFF,
+    #8f6c21
+   
+  );
   color: white;
   transform: rotateY(180deg);
 }

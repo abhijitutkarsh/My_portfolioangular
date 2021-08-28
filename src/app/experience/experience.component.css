@@ -19,7 +19,14 @@ img {
   font-size: medium;
   font-weight: 100;
   color: white;
-  background-color: saddlebrown ;
+  background-image: linear-gradient(
+    to right,
+    #aa3e3b,
+    #DB6FB7,
+        #130208ec
+   
+  );
+  /* border-radius: 50%; */
   /* animation: 1s ease-out 0s 1 slideInFromLeft; */
 }
 .price {
@@ -76,11 +83,40 @@ button:active {
   left: 39%;
   right: 0;
   
+  
 /* transform: translateY(-100%); */
   text-align: center;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+  
+}
+#ab{
+   position: relative; 
+  border: 2px solid white;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  width: 250px;
+  height: 50px;
+  /* font-size: 2em; */
+  border-radius: 5px;
+  opacity: .5;
+  top: 6vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: .3s;
+}
+#ab:hover{
+  border: 2px solid #104F55;
+  background-color: rgba(365,365,365,0.5);
+  cursor: pointer;
+  color: #A23982;
+  opacity: .8;
+  transition: .3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .p-wrapper {
@@ -110,7 +146,7 @@ button:active {
 .hot {
   position: absolute;
   top: -7px;
-  background: #f80;
+  background: rgb(102, 85, 66);
   color: #fff;
   text-transform: uppercase;
   z-index: 2;
@@ -167,12 +203,15 @@ button:active {
 }
 h2{
   padding: 2%;
+  
+}
+.h5{
+  color: black;
 }
 
 
-
 /* button */
-a{
+/* a{
   position: relative;
   display: inline-block;
   padding: 25px 30px;
@@ -185,8 +224,8 @@ a{
   overflow: hidden;
   margin-right: 50px;
  
-}
-a:hover{
+} */
+/* a:hover{
   background: #03e9f4;
   color: #050801;
   box-shadow: 0 0 5px #03e9f4,
@@ -194,8 +233,8 @@ a:hover{
               0 0 50px #03e9f4,
               0 0 200px #03e9f4;
    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
-}
-a:nth-child(1){
+} */
+/* a:nth-child(1){
   filter: hue-rotate(270deg);
 }
 a:nth-child(2){
@@ -229,16 +268,16 @@ a span:nth-child(2){
   background: linear-gradient(180deg,transparent,#03e9f4);
   animation: animate2 1s linear infinite;
   animation-delay: 0.25s;
-}
-@keyframes animate2{
+} */
+/* @keyframes animate2{
   0%{
       top: -100%;
   }
   50%,100%{
       top: 100%;
   }
-}
-a span:nth-child(3){
+} */
+/* a span:nth-child(3){
   bottom: 0;
   right: 0;
   width: 100%;
@@ -246,18 +285,18 @@ a span:nth-child(3){
   background: linear-gradient(270deg,transparent,#03e9f4);
   animation: animate3 1s linear infinite;
   animation-delay: 0.50s;
-}
-@keyframes animate3{
+} */
+/* @keyframes animate3{
   0%{
       right: -100%;
   }
   50%,100%{
       right: 100%;
   }
-}
+} */
 
 
-a span:nth-child(4){
+/* a span:nth-child(4){
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -265,12 +304,12 @@ a span:nth-child(4){
   background: linear-gradient(360deg,transparent,#03e9f4);
   animation: animate4 1s linear infinite;
   animation-delay: 0.75s;
-}
-@keyframes animate4{
+} */
+/* @keyframes animate4{
   0%{
       bottom: -100%;
   }
   50%,100%{
       bottom: 100%;
   }
-}
+} */

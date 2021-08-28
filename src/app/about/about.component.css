@@ -11,7 +11,14 @@
     font-weight: 100;
     animation: 1s ease-out 0s 1 slideInFromLeft;
     color: white;
-    background-color: darkblue;
+    background-image: linear-gradient(
+    
+    #98c7c9,
+    #A23982,
+    black
+   
+  );
+  border-radius: 100%;
     
   }
   .a {

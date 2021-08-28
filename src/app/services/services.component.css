@@ -177,7 +177,12 @@ img {
   animation: 1s ease-out 0s 1 slideInFromLeft;
   z-index: -1;
   color: white;
-  background-color: brown;
+  background-image: linear-gradient(
+    
+    #c9975f,
+    black,
+    #DB6FB7   
+  );
 }
 .price {
   font-weight: 600;
@@ -314,8 +319,8 @@ button:active {
 }
 .grid-container{
     position: absolute;
-    left: 30%;
-    bottom: -680px;
+    left: 25%;
+    bottom: -380px;
 }
 .animated{
   height: 500px;
@@ -323,3 +328,4 @@ button:active {
   left:-350px;top:200px;
   z-index: 1;
 }
+

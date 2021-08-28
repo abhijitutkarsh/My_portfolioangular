@@ -10,12 +10,12 @@
                         <span></span>
                     </li>
                     <li>
-                        <img class="p-cursor" src="assets/img/h_search.png" alt="The icon for search" width="20"/>
+
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <a href="#"[routerLink]="['/home']" [routerLinkActive]="['is-active']" style="font-weight: 500; font-size: 20px;color: aliceblue;">Home</a>
+                        <a href="#"[routerLink]="['/home']" [routerLinkActive]="['is-active']" style="font-weight: 500; font-size: 20px;color: rgb(255, 240, 255);">Home</a>
                     </li>
                     <li>
                         <a href="#"[routerLink]="['/education']" [routerLinkActive]="['is-active']"style="font-weight: 500; font-size: 20px;color: aliceblue;">Education</a>
@@ -44,7 +44,11 @@
     </div>
     
     
-    <mat-sidenav-container style="background-color: pink;">
+    <mat-sidenav-container style="background-image: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0),
+        rgb(73, 4, 138,1)
+      );">
         <mat-sidenav #sidenav mode="side"  [(opened)]="opened">
             
             <div class="toggleLinks">

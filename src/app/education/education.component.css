@@ -25,7 +25,7 @@ margin-top:2px;
 } */
 /* Filtering table demo */
 ngb-carousel .wrapper {
-  position: relative;
+  position: absolute;
   height: 0;
   padding-top: 55%; /* Keep ratio for 900x500 images */
 }
@@ -38,7 +38,13 @@ ngb-carousel .wrapper>img {
   right: 0;
 }
 #kn{
-    color: white;background-color: #a07407;
+    color: rgb(7, 7, 7);
+    background-image: linear-gradient(
+        #c2ffc7,
+        #DB6FB7
+        
+      );;
+
 }
 .card{
     
@@ -52,6 +58,7 @@ ngb-carousel .wrapper>img {
 }
 .educate{
     font-weight: 700; font-size: 50px;line-height: normal;
+    
 }
 @media screen and (max-width: 800px) {
 

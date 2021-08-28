@@ -7,12 +7,13 @@
 }
 header {
   padding: 30px 0;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgba(255, 0, 0, 0),
-    rgb(73, 4, 138)
-  );
+    rgb(20, 8, 31)
+  ); */
   font-family: "Roboto", sans-serif;
+  
 }
 
 .p_menu {
@@ -55,8 +56,13 @@ header ul li a {
 header ul li a:hover::after,
 header ul li a.is-active:after {
   content: "";
-  background: rgb(148, 148, 77);
-  height: 25px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(73, 4, 138),
+    black,
+    white
+  );  height: 25px;
   position: absolute;
   left: -7px;
   z-index: -1;
@@ -65,7 +71,7 @@ header ul li a.is-active:after {
   width: 140%;
   font-display: blue;
   border-radius: 50px;
-  border: solid red;
+  
 }
 mat-sidenav-container {
   height: 100%;
@@ -212,7 +218,8 @@ mat-sidenav {
 
 app-footer {
   position: absolute;
-  top: 750px;
+  top: 670px;
   width: 260px;
+  color: #000;
 }
 /*******************************/
